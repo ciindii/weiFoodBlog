@@ -10,43 +10,82 @@ body {
   font-size: 17px;
   color: #fff;
   line-height: 1.6;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background-color: #000;
+}
+
+a {
+  transition: opacity 0.4s ease-out;
+}
+
+a:hover {
+  text-decoration: none;
+  opacity: .5;
+  color: #fff;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* * * * * * * NAV * * * * * * */
+.navbar-brand {
+  font-family: 'Poiret One', cursive;
+  text-transform: uppercase;
+  color: #fff;
+
+}
+
+.navbar-toggler {
+
+}
+/* * * * * * * -  * * * * * * */
+.cardHeadline {
+  color: #c1c1c1;
+  font-family: 'Barlow', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 /* * * * * * * SHOWCASE * * * * * * */
-#showcase {
-    background-image: url('../img/coverPhoto.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 0 20px;
+
+.jumbotron{
+  background-color: transparent;
 }
 
-#showcase h1 {
+.jumbotron h1 {
   font-size: 50px;
+  font-family: 'Barlow', sans-serif;
+  text-transform: uppercase;
+  color: #2A0000;
 }
 
-#showcase p {
-  font-size: 20px;
-}
-
-#showcase .button {
+.learnMore {
   font-size: 18px;
   text-decoration: none;
-  color: #fff;
-  border: #fff 1px solid;
-  background-color: #ccc;
+  color: #c8c8c8;
   padding: 10px 20px;
-  border-radius: 10px;
   margin-top: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: left;
+  opacity: 1;
 }
 
 
+.landingImg{
+  background-image: url('/img/');
+  background-size: cover;
+  background-position: center;
+}
+
 /* * * * * * * CARDS * * * * * * */
+div.card-img-overlay {
+    padding: none;
+}
+
 .card {
   margin-top: 10px;
   border: none;
