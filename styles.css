@@ -31,15 +31,22 @@ a:hover {
 }
 
 /* * * * * * * NAV * * * * * * */
-.navbar-brand {
+.logo a{
   font-family: 'Poiret One', cursive;
   text-transform: uppercase;
   color: #fff;
-
 }
 
-.navbar-toggler {
+.logo {
+  background-image: url('./img/whiteStroke.png');
+}
 
+.navbar li a{
+  color: #fff;
+  text-align: right;
+  font-family: 'Barlow';
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 /* * * * * * * -  * * * * * * */
 .cardHeadline {
@@ -51,15 +58,22 @@ a:hover {
 
 /* * * * * * * SHOWCASE * * * * * * */
 
-.jumbotron{
+.jumbo{
   background-color: transparent;
+  z-index: 1;
+  background-image: url('./img/whiteStroke.png');
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+  margin-top: 30px;
 }
 
 .jumbotron h1 {
   font-size: 50px;
   font-family: 'Barlow', sans-serif;
   text-transform: uppercase;
-  color: #2A0000;
+  color: #000;
+  margin: 30px;
 }
 
 .learnMore {
@@ -76,9 +90,15 @@ a:hover {
 
 
 .landingImg{
-  background-image: url('/img/');
+  background-image: url('./img/whiteStroke.png');
   background-size: cover;
   background-position: center;
+  position: absolute;
+  right: 0;
+  width: 50%;
+  height: 450px;
+  z-index: 0;
+  opacity: .9;
 }
 
 /* * * * * * * CARDS * * * * * * */
@@ -131,4 +151,40 @@ opacity: 0.9;
   background-position: center;
   background-image: url('/img/rice-card.jpg');
   height: 400px;
+}
+
+
+@media only screen and (min-width: 800px) {
+
+  .bigScreenNav {
+    margin-top: 20px;
+  }
+
+  .leftNav a,
+  .rightNav a {
+    color: #fff;
+    padding: 10px;
+    font-size: .8em;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+  }
+
+  .leftNav {
+    text-align: right;
+  }
+
+  .leftNav a {
+    margin-left: 20px;
+  }
+
+
+  .rightNav a {
+    margin-right: 20px;
+  }
+
+  .logo {
+    text-align: center;
+    padding: 10px;
+  }
+
 }
