@@ -13,6 +13,7 @@ body {
   overflow-y: scroll;
   overflow-x: hidden;
   background-color: #000;
+  min-width: 399px;
 }
 
 a {
@@ -25,12 +26,25 @@ a:hover {
   color: #fff;
 }
 
-.wrapper {
+.wrapper2 {
   width: 90%;
   margin: 0 auto;
 }
 
 /* * * * * * * NAV * * * * * * */
+
+nav{
+	height: 120px;
+	width: 100%;
+	position: relative;
+	background-color: #000;
+	box-shadow: 0px 2px 5px rgba(0,0,0,.4);
+}
+
+
+/* hides the Large Screen Nav */
+
+
 .logo a{
   font-family: 'Poiret One', cursive;
   text-transform: uppercase;
@@ -101,6 +115,17 @@ a:hover {
   opacity: .9;
 }
 
+.landing h1 {
+  text-align: center;
+  position: relative;
+  top: 300px;
+  left: 30px;
+  color: #000;
+  font-family: 'Barlow', sans-serif;
+  text-transform: uppercase;
+  font-size: 80px;
+}
+
 /* * * * * * * CARDS * * * * * * */
 div.card-img-overlay {
     padding: none;
@@ -156,6 +181,10 @@ opacity: 0.9;
 
 @media only screen and (min-width: 800px) {
 
+  .smallScreenNav {
+    display: none;
+  }
+
   .bigScreenNav {
     margin-top: 20px;
   }
@@ -182,7 +211,7 @@ opacity: 0.9;
     margin-right: 20px;
   }
 
-  .logo {
+  .logo2 {
     text-align: center;
     padding: 10px;
   }
