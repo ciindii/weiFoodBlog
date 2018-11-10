@@ -12,7 +12,7 @@ body {
   line-height: 1.6;
   overflow-y: scroll;
   overflow-x: hidden;
-  background-color: #000;
+  background-color: #eee;
 }
 
 a {
@@ -25,35 +25,62 @@ a:hover {
   color: #fff;
 }
 
-.wrapper2 {
+.wrapper {
   width: 90%;
   margin: 0 auto;
 }
 
 /* * * * * * * NAV * * * * * * */
 
-nav{
-	height: 120px;
-	width: 100%;
-	position: relative;
-	background-color: #fff;
-	box-shadow: 0px 2px 5px rgba(0,0,0,.4);
+
+	/* box-shadow: 0px 2px 5px rgba(0,0,0,.4); */
+
+/* toggle button */
+.togglebtn {
+  background-color: red;
+  color: #fff;
+  padding: 20px;
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
 }
 
-nav .container {
-  padding: 40px;
+.togglebtn:hover {
+  opacity: .4;
 }
 
-nav a {
-  margin-right: 10px;
-  color: #000;
-  font-family: 'Barlow';
-  letter-spacing: 1px;
-  text-transform: uppercase;
+/* div that position drop down nav contents */
+.toggleNav {
+  position: relative;
+  display: inline-block;
 }
 
-/* hides the Large Screen Nav */
+/* toggle menu content */
+.toggle-content {
+  display: none;
+  position: absolute;
+  border-color: #ccc;
+  min-width: 200px;
+  box-shadow: 0px 2px 5px rgba(0,0,0,.4);
+  z-index: 1;
+}
 
+/* Links inside after toggle */
+.toggle-content a {
+  color: pink;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.toggle-content a:hover {
+  opacity: ;
+}
+
+/* show menu */
+.show {
+  display: block;
+}
 
 .logo a{
   font-family: 'Poiret One', cursive;
@@ -124,9 +151,6 @@ nav a {
   opacity: 0.5;
 }
 
-.fa  {
-  color: pink;
-}
 /* * * * * * * -  * * * * * * */
 .cardHeadline {
   color: #c1c1c1;
