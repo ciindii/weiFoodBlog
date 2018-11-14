@@ -15,6 +15,15 @@ body {
   background-color: #000;
 }
 
+footer {
+  padding-top: 300px;
+}
+
+footer p {
+  text-align: center;
+  opacity: .5;
+}
+
 a {
   transition: opacity 0.4s ease-out;
 }
@@ -35,7 +44,7 @@ a:hover {
 
 .main-header {
   display: flex;
-  justify-content:space-between;
+  justify-content: space-between;
 }
 
 .logo {
@@ -70,6 +79,7 @@ a:hover {
   position: absolute;
   top: 30%;
   left: 50%;
+  margin-top: 45px;
   transform: translate(-50%, -50%);
   border-color: black;
   opacity: .8;
@@ -83,7 +93,7 @@ a:hover {
 .toggle-content a {
   color: #fff;
   padding: 12px 16px;
-  text-align: center;
+  text-align: right;
   text-decoration: none;
   display: block;
   letter-spacing: 2px;
@@ -117,22 +127,29 @@ a:hover {
 }
 
 /* login and signup button styles */
-.login,
-.signup {
-  padding: 7px;
-  border-radius: 12px;
+#login,
+#signup {
+  padding: 6px 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
   background-color: #000;
   cursor: pointer;
   color: #fff;
   display: flex;
   flex-direction: column;
+  border: 1px solid;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px rgba(0,0,0,.04);
+  transition:  all .2s ease-in-out;
+  margin-right: 15px;
 }
 
-.login {
+#login  {
   float: right;
 }
-.signup {
+#signup {
   float: right;
+  background-color: red;
 }
 
 /* social media icon styles*/
@@ -202,6 +219,7 @@ a:hover {
   background-position: center;
   min-height: 500px;
   margin-top: 30px;
+  margin-bottom: 200px;
 }
 
 .jumbotron h1 {
